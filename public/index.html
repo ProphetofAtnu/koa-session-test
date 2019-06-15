@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script src="/static/scripts.js"></script>
+    <style>
+        button {
+            display: block;
+            margin: 2em;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form id="form-test">
+        <table>
+            <thead>
+                <th>Key</th>
+                <th>Value</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>
+                            User Name
+                        </p>
+                    </td>
+                    <td>
+                        <input name="uname" type="text" value="" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Other String?
+                        </p>
+                    </td>
+                    <td>
+                        <input name="string" type="text" value="" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+    <div class="session-info">
+        <h1>Session Info:</h1>
+        <pre id="session-variables">Session variables go here...</pre>
+        <button id="get-session">Get Session</button>
+        <p>Status: <span id="result"></span></p>
+    </div>
+</body>
+
+</html>
